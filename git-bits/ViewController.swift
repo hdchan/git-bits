@@ -27,19 +27,31 @@ class ViewController: UIViewController {
         return view
     }()
     
+    private lazy var updateButton: UIButton = {
+        let view = UIButton(type: .system)
+        view.setTitle("Update", for: .normal)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     override func loadView() {
         super.loadView()
         
         view.addSubview(helloWorldLabel)
         view.addSubview(dateLabel)
+        view.addSubview(updateButton)
         
         NSLayoutConstraint.activate([
             helloWorldLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             helloWorldLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             
             dateLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            dateLabel.topAnchor.constraint(equalTo: helloWorldLabel.bottomAnchor, constant: 10)
+            dateLabel.topAnchor.constraint(equalTo: helloWorldLabel.bottomAnchor, constant: 10),
+            
+            updateButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            updateButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10)
             ])
+        
     }
     
     override func viewDidLoad() {

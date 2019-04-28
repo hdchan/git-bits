@@ -27,6 +27,13 @@ class ViewController: UIViewController {
         return view
     }()
     
+    private lazy var nameInputField: UITextField = {
+        let view = UITextField()
+        view.placeholder = "Your name!"
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     private lazy var updateButton: UIButton = {
         let view = UIButton(type: .system)
         view.setTitle("Update", for: .normal)
@@ -39,6 +46,7 @@ class ViewController: UIViewController {
         
         view.addSubview(helloWorldLabel)
         view.addSubview(dateLabel)
+        view.addSubview(nameInputField)
         view.addSubview(updateButton)
         
         NSLayoutConstraint.activate([
@@ -47,6 +55,10 @@ class ViewController: UIViewController {
             
             dateLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             dateLabel.topAnchor.constraint(equalTo: helloWorldLabel.bottomAnchor, constant: 10),
+            
+            nameInputField.widthAnchor.constraint(equalToConstant: 200),
+            nameInputField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            nameInputField.bottomAnchor.constraint(equalTo: updateButton.topAnchor, constant: -20),
             
             updateButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             updateButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10)

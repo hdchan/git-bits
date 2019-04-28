@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     private lazy var helloWorldLabel: UILabel = {
         let view = UILabel()
-        view.text = "Hello World!"
+        view.text = "Hi There World!"
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     
     @objc private func onUpdateTapped() {
         guard let name = nameInputField.textField.text else { return }
-        helloWorldLabel.text = "Hello \(name)!"
+        helloWorldLabel.text = "Hi there \(name)!"
     }
 
 }

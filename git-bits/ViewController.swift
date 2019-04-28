@@ -17,12 +17,8 @@ class ViewController: UIViewController {
         return view
     }()
     
-    private lazy var dateLabel: UILabel = {
-        let view = UILabel()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        let date = formatter.string(from: Date())
-        view.text = date
+    private lazy var dateLabel: DateLabelView = {
+        let view = DateLabelView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

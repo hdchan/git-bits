@@ -12,6 +12,7 @@
 		9DD7CF422275F3EE0074D697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD7CF402275F3EE0074D697 /* Main.storyboard */; };
 		9DD7CF442275F3EF0074D697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DD7CF432275F3EF0074D697 /* Assets.xcassets */; };
 		9DD7CF472275F3EF0074D697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD7CF452275F3EF0074D697 /* LaunchScreen.storyboard */; };
+		9DD7CF502275F8850074D697 /* DateLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD7CF4F2275F8850074D697 /* DateLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9DD7CF432275F3EF0074D697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DD7CF462275F3EF0074D697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DD7CF482275F3EF0074D697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DD7CF4F2275F8850074D697 /* DateLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				9DD7CF3C2275F3EE0074D697 /* AppDelegate.swift */,
 				9DD7CF3E2275F3EE0074D697 /* ViewController.swift */,
+				9DD7CF4F2275F8850074D697 /* DateLabelView.swift */,
 				9DD7CF402275F3EE0074D697 /* Main.storyboard */,
 				9DD7CF432275F3EF0074D697 /* Assets.xcassets */,
 				9DD7CF452275F3EF0074D697 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DD7CF502275F8850074D697 /* DateLabelView.swift in Sources */,
 				9DD7CF3F2275F3EE0074D697 /* ViewController.swift in Sources */,
 				9DD7CF3D2275F3EE0074D697 /* AppDelegate.swift in Sources */,
 			);

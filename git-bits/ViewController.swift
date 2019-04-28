@@ -51,17 +51,17 @@ class ViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             helloWorldLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            helloWorldLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            helloWorldLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             
             dateLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             dateLabel.topAnchor.constraint(equalTo: helloWorldLabel.bottomAnchor, constant: 10),
             
             nameInputField.widthAnchor.constraint(equalToConstant: 200),
             nameInputField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            nameInputField.bottomAnchor.constraint(equalTo: updateButton.topAnchor, constant: -20),
+            nameInputField.topAnchor.constraint(equalTo: dateLabel.topAnchor, constant: 100),
             
             updateButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            updateButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10)
+            updateButton.topAnchor.constraint(equalTo: nameInputField.bottomAnchor, constant: 20)
             ])
         
     }

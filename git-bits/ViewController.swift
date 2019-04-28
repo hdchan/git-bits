@@ -72,7 +72,8 @@ class ViewController: UIViewController {
     }
     
     @objc private func onUpdateTapped() {
-        
+        guard let name = nameInputField.textField.text else { return }
+        helloWorldLabel.text = "Hello \(name)!"
     }
 
 }

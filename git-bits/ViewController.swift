@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     private lazy var dateLabel: DateLabelView = {
         let view = DateLabelView()
+        view.label.textColor = .green
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

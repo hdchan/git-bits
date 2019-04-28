@@ -10,7 +10,7 @@ import UIKit
 
 class DateLabelView: UIView {
     
-    private lazy var label: UILabel = {
+    lazy var label: UILabel = {
         let view = UILabel()
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"

@@ -27,9 +27,8 @@ class ViewController: UIViewController {
         return view
     }()
     
-    private lazy var nameInputField: UITextField = {
-        let view = UITextField()
-        view.placeholder = "Your name!"
+    private lazy var nameInputField: NameInputView = {
+        let view = NameInputView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -37,6 +36,7 @@ class ViewController: UIViewController {
     private lazy var updateButton: UIButton = {
         let view = UIButton(type: .system)
         view.setTitle("Update", for: .normal)
+        view.addTarget(self, action: #selector(onUpdateTapped), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -70,7 +70,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @objc private func onUpdateTapped() {
+        
+    }
 
 }
 

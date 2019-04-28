@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     private lazy var helloWorldLabel: UILabel = {
         let view = UILabel()
         view.text = "Hello World!"
+        view.textColor = .blue
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
